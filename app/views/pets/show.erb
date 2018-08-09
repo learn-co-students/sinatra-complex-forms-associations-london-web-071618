@@ -1,1 +1,5 @@
-show.erb
+<h4>Pets:</h4>
+<ul>
+  <li><%=@pet.name%></li>
+  <li><%=Owner.all.find{|owner| owner.id == @pet.owner_id}.name%></li>
+</ul>
